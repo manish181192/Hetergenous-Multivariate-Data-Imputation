@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Site",
+    "type": "categorical",
+    "ndims": 20
+  },
+  {
+    "name": "NFCcenter",
+    "type": "real",
+    "ndims": 1
+  }
+]

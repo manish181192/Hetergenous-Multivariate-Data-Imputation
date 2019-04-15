@@ -4,6 +4,7 @@ datapath = "/home/manish/ML/Rutgers/Project/ML3/ML3/ML3AllSites.csv"
 
 df = pd.read_csv(datapath)
 print(len(list(df)))
+df = df[['Site', 'age', 'RowNumber']]
 print(df["RowNumber"])
 # def frequency_table(x):
 #     return pd.crosstab(index=x,  columns="count")
