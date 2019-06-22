@@ -1,0 +1,16 @@
+[
+  {
+    "name": "NFCcenter",
+    "type": "real",
+    "ndims": 1
+  },{
+    "name": "gender",
+    "type": "categorical",
+    "ndims": 10
+  },
+  {
+    "name": "anagrams2",
+    "type": "multilabel",
+    "ndims": 57
+  }
+]

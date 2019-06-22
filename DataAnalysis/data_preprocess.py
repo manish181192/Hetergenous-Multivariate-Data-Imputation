@@ -5,8 +5,14 @@ import config
 datapath = "/home/manish/ML/Rutgers/Project/ML3/ML3/ML3AllSites.csv"
 
 df = pd.read_csv(datapath)
-print(len(list(df)))
-df = df[['Site', 'age']]
+# print(list(df))
+col = "Experimenter"
+df = df[[col]]
+# df[col] = df[col].fillna(-1)
+# df[col] = df[col].astype(int)
+# df[col] = df[col].astype(str)
+# df[col] = df[col].replace('-1', np.nan)
+
 # print(df["RowNumber"])
 def frequency_table(x):
     return pd.crosstab(index=x,  columns="count")
@@ -21,9 +27,9 @@ def get_frequency_dist():
     freqDistFile.close()
     print("Generated frequency distribution file")
 
-def generate_vocab_files():
-    vocab_dir = config.vocab_dir
-    reverse_vocab_dir = config.reverse_vocab_dir
+def generate_vocab_files(printFile):
+    vocab_dir = "vocab_dir/"
+    reverse_vocab_dir = "reverse_vocab_dir/"
     ctabs = {}
     for column in df:
         ctabs[column] = frequency_table(df[column])
@@ -35,9 +41,11 @@ def generate_vocab_files():
             feature_vocab[k] = current_id
             reversed_feature_vocab[current_id] = k
             current_id += 1
+        if printFile: print(str(feature_vocab))
         np.save(vocab_dir + column, feature_vocab)
         np.save(reverse_vocab_dir + column, reversed_feature_vocab)
+        print("Vocab Size: {}".format(len(feature_vocab)))
         print("done")
 
 if __name__=="__main__":
-    generate_vocab_files()
+    generate_vocab_files(printFile=True)

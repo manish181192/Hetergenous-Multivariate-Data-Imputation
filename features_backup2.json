@@ -1,0 +1,17 @@
+[
+  {
+    "name": "NFCcenter",
+    "type": "real",
+    "ndims": 1
+  },{
+    "name": "attention",
+    "type": "categorical",
+    "ndims": 5
+  },{
+    "name": "highpower",
+    "type": "nlp",
+    "ndims": 50,
+    "max_seq_length": 364,
+    "vocab_size":5418
+  }
+]

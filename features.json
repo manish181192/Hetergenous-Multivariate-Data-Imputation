@@ -5,8 +5,63 @@
     "ndims": 20
   },
   {
+    "name": "age",
+    "type": "categorical",
+    "ndims": 32
+  },
+  {
+    "name": "Participant_ID",
+    "type": "categorical",
+    "ndims": 334
+  },
+  {
     "name": "NFCcenter",
     "type": "real",
     "ndims": 1
+  },{
+    "name": "Intrinsic",
+    "type": "real",
+    "ndims": 1
+  },{
+    "name": "attention",
+    "type": "categorical",
+    "ndims": 5
+  },
+  {
+    "name": "bestgrade3",
+    "type": "categorical",
+    "ndims": 10
+  },{
+    "name": "anagrams1",
+    "type": "multilabel",
+    "ndims": 57
+  },{
+    "name": "anagrams2",
+    "type": "multilabel",
+    "ndims": 57
+  },
+  {
+    "name": "ethnicity",
+    "type": "categorical",
+    "ndims": 75
+  },
+  {
+    "name": "feedback",
+    "type": "categorical",
+    "ndims": 3
+  },
+  {
+    "name": "gender",
+    "type": "categorical",
+    "ndims": 10
+  },
+  {
+    "name": "major",
+    "type": "categorical",
+    "ndims": 771
+  },{
+    "name": "Experimenter",
+    "type": "categorical",
+    "ndims": 172
   }
 ]

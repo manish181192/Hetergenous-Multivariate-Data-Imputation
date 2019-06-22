@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Site",
+    "type": "categorical",
+    "ndims": 20
+  },
+  {
+    "name": "Participant_ID",
+    "type": "categorical",
+    "ndims": 584
+  },
+  {
+    "name": "RowNumber",
+    "type": "categorical",
+    "ndims": 2998
+  },
+  {
+    "name": "session_id",
+    "type": "categorical",
+    "ndims": 2512
+  },
+  {
+    "name": "age",
+    "type": "categorical",
+    "ndims": 32
+  },
+  {
+    "name": "anagrams1",
+    "type": "multilabel",
+    "ndims": 57
+  },
+  {
+    "name": "attention",
+    "type": "categorical",
+    "ndims": 5
+  },
+  {
+    "name": "bestgrade3",
+    "type": "categorical",
+    "ndims": 10
+  },
+  {
+    "name": "big5_01",
+    "type": "categorical",
+    "ndims": 7
+  },
+  {
+    "name": "ethnicity",
+    "type": "categorical",
+    "ndims": null
+  },
+  {
+    "name": "feedback",
+    "type": "categorical",
+    "ndims": 2
+  },
+  {
+    "name": "gender",
+    "type": "categorical",
+    "ndims": 7
+  },
+  {
+    "name": "Persistence",
+    "type": "posReal",
+    "ndims": 1
+  },
+  {
+    "name": "Intrinsic",
+    "type": "posReal",
+    "ndims": 1
+  },
+  {
+    "name": "backcount1",
+    "type": "real",
+    "ndims": 1
+  },
+  {
+    "name": "NFCcenter",
+    "type": "real",
+    "ndims": 1
+  },
+  {
+    "name": "highpower",
+    "type": "nlp",
+    "ndims": 50,
+    "max_seq_length": 364,
+    "vocab_size":5418
+  },
+  {
+    "name": "lowpower",
+    "type": "nlp",
+    "ndims": 50,
+    "max_seq_length": 394,
+    "vocab_size":5447
+  }
+]
