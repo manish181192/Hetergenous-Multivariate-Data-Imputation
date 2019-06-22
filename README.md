@@ -1,2 +1,4 @@
-# Hi-vae
-Using Variational autoencoder for predicting missing data(texts, numerical and categorical features)
+# Data Imputation using Variational Autoencoder
+
+In general we face the problem of missing data more often than we can imagine. Data Interpolation or Data imputation is a process of replacing the missing data according to model which hopefully captures the undlying process which generates the data. For our project we are dealing with dataset ML3 which is a psychological dataset gathered by performing a survey on university students. The survey comprises of wide variety of questions which aim to determine the state of the test taker as accurately as possible. However, in our survey and in real life scenario many of the questions goes unanswered or answered incorrectly(noise). we need to rely on statistical methods to capture the behavior of the test taker and predict these missing or noisy values. Due to a wide variety of questions we have features which are mixed in nature. Some features are real value, some are words and some texts. We will look into the detail of the dataset and various feature types in subsequent section. It is imperative to understand the data, what type of values we are facing and what kind of noise exists in each of these features.
+
